@@ -8,15 +8,15 @@
 	position: absolute;
 }
 
-body {
-	min-width: 1240px;
-}
+/*body {*/
+	/*min-width: 1240px;*/
+/*}*/
 
 .form_block .title {
 	letter-spacing: -1px;
 }
 
-#form .invalid .error-message, 
+#form .invalid .error-message,
 #form .empty .empty-message {
 	display: block;
 

@@ -4,9 +4,13 @@
      <title>Services</title>
      <meta charset="utf-8">
      <meta name="format-detection" content="telephone=no" />
-     <link rel="icon" href="images/favicon.ico">
-     <link rel="shortcut icon" href="images/favicon.ico" />
-     <link rel="stylesheet" href="css/style.css">
+         <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThcDXCeI_ix2s5yfo1mCvSyybeYDlHH5wcFhXsxuuoHR8IXkWhqg">
+         <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThcDXCeI_ix2s5yfo1mCvSyybeYDlHH5wcFhXsxuuoHR8IXkWhqg" />
+         <link rel="stylesheet" href="css/slippry.css?<?echo time();?>">
+         <link rel="stylesheet" href="css/elastislide.css?<?echo time();?>" />
+         <link rel="stylesheet" href="css/style.css?<?echo time();?>">
+         <link rel="stylesheet" href="css/superfish.css?<?echo time();?>">
+         <link rel="stylesheet" href="css/grid.css?<?echo time();?>">
      <script src="js/jquery.js"></script>
      <script src="js/jquery-migrate-1.1.1.js"></script>
      <script src="js/script.js"></script> 
@@ -41,34 +45,31 @@
             <div class="grid_12">
                       <h1>
           <a href="../index.php">
-            <img src="images/logo.png" alt="Your Happy Family">
+            <img src="images/logo.png" alt="Your Happy Family" class="main-logo">
           </a>
         </h1>  
              
     </div>
   </div> 
   <div class="clear"></div>
-  <div class="menu_block">
-    <nav class="horizontal-nav full-width horizontalNav-notprocessed">
-      <ul class="sf-menu">
-       <li><a href="../index.php">Головна</a></li>
-       <li class="current"><a href="index-2.html">Послуги</a></li>
-       <li><a href="index-3.php">Ціни</a></li>
-       <li><a href="index-4.html">Контакти</a></li>
-     </ul>
-    </nav>
-    <div class="clear"></div>       
-  </div>
+    <div class="menu_block">
+        <div class="flex-container menu">
+            <div><a href="/index.php">Головна</a></div>
+            <div class="current"><a href="./index-2.php">Послуги</a></div>
+            <div><a href="./index-3.php">Ціни</a></div>
+            <div><a href="./index-4.php">Контакти</a></div>
+        </div>
+    </div>
 </header>  
 
 <!--=====================Content======================-->
-<section class="content"><div class="ic">More Website Templates @ TemplateMonster.com - May 19, 2014!</div>
-  <div class="container_12">
+<section class="content">
+  <div class="flex-container">
     <div class="grid_3 prefix_2">
       <h4>Список послуг</h4>
       <ul class="list1">
         <li><a href="./index-3.php">Прибирання квартир </a></li>
-        <li><a href="./index-3.php">Прибирання домів </a></li>
+        <li><a href="./index-3.php">Прибирання будинків </a></li>
         <li><a href="./index-3.php">Прибирання офісів</a></li>
         <li><a href="./index-3.php">Прибирання яхт</a></li>
         <li><a href="./index-3.php">Прибирання складських приміщень</a></li>
@@ -97,8 +98,8 @@
 <footer> 
   <div class="container_12">
     <div class="row">
-      <div class="grid_12">  
-            <a href="./index-3.php" onclick="goToByScroll('top'); return false;" class="top"></a><br> <a href="./index-3.php" class="f_logo"><img src="images/f_logo.png" alt=""></a>
+      <div class="grid_12 ml_0">
+            <a href="./index-3.php" onclick="goToByScroll('top'); return false;" class="top"></a><br> <a href="./index-3.php" class="f_logo main-logo"><img src="images/f_logo.png" alt=""></a>
           <div class="footer_socials">
             <a href="./index-3.php" class="fa fa-twitter"></a>
             <a href="./index-3.php" class="fa fa-facebook"></a>

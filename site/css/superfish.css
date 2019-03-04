@@ -12,7 +12,6 @@
 .page1 .menu_block {
 	border-top: 0;
 	padding-top: 37px;
-	padding-bottom: 10px;
 }
 
 .menu_block nav {
@@ -61,12 +60,29 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	display: block;
 }
 
-
+.current {
+	color: #79c4ca;
+}
 
 .sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li>a:hover {
 	color: #79c4ca;
 }
 
+
+@media all and (max-width: 670px){
+	.sf-menu>li {
+		font-size: 15px;
+		line-height: 20px;
+	}
+}
+
+@media all and (max-width: 420px){
+	.sf-menu>li {
+		font-size: 10px;
+		line-height: 20px;
+		margin-left: 10px;
+	}
+}
 
 
 
@@ -85,7 +101,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	display: block;
 }
 
-.sf-menu>li.current>a.sf-with-ul:after, 
+.sf-menu>li.current>a.sf-with-ul:after,
 .sf-menu>li.sfHover>a.sf-with-ul:after {
 	background-position: 0 0;
 }
@@ -113,7 +129,7 @@ nav{ position:relative;padding: 0px 0 0 0;}
 }
 
 
- 
+
 .sf-menu>li>ul>li>a.sf-with-ul:after {
 	content: '';
     font-family: 'FontAwesome';
@@ -210,47 +226,4 @@ nav{ position:relative;padding: 0px 0 0 0;}
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	.menu_block {
-		float: none !important;
-		padding: 20px 0px 20px !important;
-		clear: both;
-		margin: 0;
-		min-height: 0px;
-	}
 
-
-  .menu_block  nav{
-  	border: none !important;
-		float:none !important;
-		font:12px/15px Arial, Helvetica, sans-serif;
-		text-transform:uppercase;
-		color:#927c67;
-		margin: 0 auto;
-		padding-left: 0 !important;
-		
-	
-	}
-
-
-	
-
-  header nav ul {
-  	border: none;
-  }
-
-	.sf-menu{display:none !important; float: none;}
-
-	.select-menu {
-		font:12px/15px Arial, Helvetica, sans-serif;
-		color:#202020;
-		width:100%;
-		margin: 0 auto;
-		float: none;
-	    outline: none;
-	    display: block !important;
-		border:2px solid #090909;
-	}
-	
-
-}

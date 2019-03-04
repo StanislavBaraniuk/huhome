@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="3fa0ddbd-5229-4e10-a096-32d2a5929266" name="zzz" url="http://clean-your-home.zzz.com.ua">
+        <fileTransfer host="rudy.zzz.com.ua" port="21" rootFolder="/clean-your-home.zzz.com.ua">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

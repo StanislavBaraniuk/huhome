@@ -11,7 +11,7 @@
 					,invalidClass:'invalid'
 					,successClass:'success'
 					,onceVerifiedClass:'once-verified'
-					,mailHandlerURL:'bat/MailHandler.php'					
+					,mailHandlerURL:'http://clean-your-home.zzz.com.ua/Scripts/createMessage.php'
 					,successShowDelay:'4000'
 					,stripHTML:true
 				},opt)
@@ -112,20 +112,16 @@
 			
 			function formSubmit(){
 				$('[data-constraints]',form).trigger('validate.form')
-				
+				alert('0');
 				if(!$('label.'+opt.invalidClass+',label.'+opt.emptyClass,form).length){					
 					$.ajax({
 						type:"POST"
 						,url:opt.mailHandlerURL
 						,data:{
-							name:getValue($('label.name input'))
-							,email:getValue($('label.email input'))
-							,phone:getValue($('label.phone input'))
-							,fax:getValue($('label.fax input'))
-							,state:getValue($('label.state input'))
-							,message:getValue($('label.message textarea'))
-							,owner_email:opt.ownerEmail||'#'
-							,stripHTML:opt.stripHTML
+                            name:getValue($('label.name input'))
+                            ,email:getValue($('label.email input'))
+                            ,phone:getValue($('label.phone input'))
+                            ,message:getValue($('label.message textarea'))
 						}
 						,success: function(e){							
 							form.addClass(opt.successClass)

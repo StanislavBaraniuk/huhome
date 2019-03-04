@@ -14,16 +14,16 @@
   Note: IE6 works fine without this fix.
 */
 
-body {
-  min-width: 1200px;
-}
+/*body {*/
+  /*min-width: 1200px;*/
+/*}*/
 
 /* Containers
 ----------------------------------------------------------------------------------------------------*/
 .container_12 {
 	margin-left: auto;
 	margin-right: auto;
-	width: 1200px;
+	width: 100vw;
 }
 
 /* Grid >> Global
@@ -127,9 +127,13 @@ body {
 }
 
 .container_12 .grid_12 {
-	width:1170px;
+	/*margin: 0;*/
+	width:100vw;
 }
 
+.ml_0 {
+	margin-left: 0;
+}
 
 
 
@@ -371,4 +375,11 @@ body {
 
 .clearfix {
   zoom: 1;
+}
+
+.flex-container {
+	width: 100vw;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center; flex-direction: row; flex-wrap: wrap
 }
